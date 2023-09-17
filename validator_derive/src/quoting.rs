@@ -212,7 +212,6 @@ pub fn quote_length_validation(
                 #min_err_param_quoted
                 #max_err_param_quoted
                 #equal_err_param_quoted
-                err.add_param(::std::borrow::Cow::from("value"), &#validator_param);
                 errors.add(#field_name, err);
             }
         );
