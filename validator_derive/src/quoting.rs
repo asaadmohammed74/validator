@@ -427,7 +427,6 @@ pub fn quote_custom_validation(
                 ::std::result::Result::Ok(()) => (),
                 ::std::result::Result::Err(mut err) => {
                     #add_message_quoted
-                    err.add_param(::std::borrow::Cow::from("value"), &#validator_param);
                     errors.add(#field_name, err);
                 },
             };
